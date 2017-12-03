@@ -1,12 +1,11 @@
-
-public class FirstProg
-{
- public static void main(String[]args)
- {
-  System.out.println("I, Che Perth, am determined to learn how to code."); 
-  System.out.println("June 1st 2017"); 
+//The original code before any changes were made. 
+public class FirstProg 
+ { 
+  public static void main( String[] args ) { 
+  System.out.println( "I am determined to learn how to code." ); 
+  System.out.println( "Today's date is" ); 
+  } 
  }
-}
 
 
 
