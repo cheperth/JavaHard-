@@ -1,7 +1,6 @@
-/*Learn Java the Hard Way coding assignment before any changes are made.*/ 
+/*Learn Java the Hard Coding assignment after changes.*/ 
 
-
-import java.util.Scanner; 
+mport java.util.Scanner; 
 
 public class ForgetfulMachine
 {
