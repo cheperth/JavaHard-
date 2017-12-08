@@ -1,3 +1,6 @@
+/*Learn Java the Hard Way coding assignment before any changes are made.*/ 
+
+
 import java.util.Scanner; 
 
 public class ForgetfulMachine
