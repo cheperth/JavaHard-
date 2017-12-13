@@ -15,19 +15,19 @@ import java.util.Scanner;
 
 public class BMICalculator 
 {
-	public static void main( String[] args ) 
+ public static void main( String[] args ) 
  {
-		Scanner keyboard = new Scanner(System.in);
-		double m, kg, bmi;
+  Scanner keyboard = new Scanner(System.in);
+  double m, kg, bmi;
 
-		System.out.print( "Your height in m: " );
-		m = keyboard.nextDouble();
+  System.out.print( "Your height in m: " );
+  m = keyboard.nextDouble();
 
-		System.out.print( "Your weight in kg: " );
-		kg = keyboard.nextDouble();
+  System.out.print( "Your weight in kg: " );
+  kg = keyboard.nextDouble();
 
-		bmi = kg / (m*m);
+  bmi = kg / (m*m);
 
-		System.out.println( "Your BMI is " + bmi );
-	}
+  System.out.println( "Your BMI is " + bmi );
+ }
 }
