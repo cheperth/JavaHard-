@@ -3,3 +3,5 @@ Learn Java the Hard Way by Graham Mitchell is a Book with  a series of Lessons w
 
 Inside of this repository are of my lessons from LJTHW. 
 
+All assignments were entered in as original source code from author and the changes i made afters. There are branches for every assignment so that the merge request and changes can be viewed. 
+
