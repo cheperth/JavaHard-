@@ -1,7 +1,6 @@
 /*
 Learn Java the Hard Way Lesson 26 : A Number-Guessing Game
-This is the original code provided by the book before any 
-changes from the Study Drill were applied. 
+This is the code after the changes from the Study Drill were applied. 
 
 Study Drill: 
 
@@ -12,35 +11,39 @@ only one copy of these two lines and put if after both if statements
 (but still inside the body of the while loop). Confirm that the program 
 still works. 
 */ 
-import java.util.Scanner;
+import java.util.Scanner; 
 
-public class HighLow 
+public class HIghLow
 {
-	public static void main( String[] args ) 
+ public static void main(String[]args)
+ {
+  Scanner keyboard = new Scanner(System.in); 
+  int secret, guess; 
+  
+  secret = 1 + (int)(100*Math.random()); 
+  
+  System.out.println( "I'm thinking of a number between 1-100."); 
+  System.out.println("Try to guess it!"); 
+  System.out.print("> "); 
+  guess = keyboard.nextInt(); 
+  
+  while(secret != guess)
   {
-		Scanner keyboard = new Scanner(System.in);
-		int secret, guess;
-
-		secret = 1 + (int)( 100*Math.random() );
-
-		System.out.println( "I'm thinking of a number between 1-100." );
-		System.out.println( "Try to guess it!" );
-		System.out.print( "> " );
-		guess = keyboard.nextInt();
-
-		while ( secret != guess ) {
-			if ( guess < secret ) {
-				System.out.print( "Sorry, your guess is too low." );
-				System.out.print( " Try again.\n> " );
-				guess = keyboard.nextInt();
-			}
-			if ( guess > secret ) {
-				System.out.print( "Sorry, your guess is too high." );
-				System.out.print( " Try again.\n> " );
-				guess = keyboard.nextInt();
-			}
-		}
-
-		System.out.println( "You guessed it! What are the odds?!?" );
-	}
-}
+   if(guess < secret)
+   {
+    System.out.print("Sorry, your guess is too low.\n");   
+   }
+   if(guess > secret) 
+   {
+    System.out.print("Sorry, you guess is too high.\n");   
+   }
+   if(guess != secret)
+   {
+	System.out.print("Try again.\n> ");
+	guess = keyboard.nextInt();
+   }
+  }
+  
+  System.out.println("You guessed it! What are the odds?!?"); 
+ }
+} 
