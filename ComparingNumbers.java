@@ -1,7 +1,7 @@
 /*
 Learn Java the Hard Way Lesson 16: More If Statements
-This is the original source code provided by the book 
-before any changes were made. 
+This is the after all of the changes from the Study 
+Drills were made. 
 
 Study Drills: 
 
@@ -17,36 +17,45 @@ only the last if statement in the program has them. Confirm that everything work
 */ 
 
 
-import java.util.Scanner;
+import java.util.Scanner; 
 
 public class ComparingNumbers
 {
-	public static void main( String[] args ) 
+ public static void main(String[]args)
+ {
+  Scanner keyboard = new Scanner(System.in); 
+  
+  double first, second; 
+  
+  System.out.print( "Give me two numbers. First: " ); 
+  first = keyboard.nextDouble(); 
+  System.out.print( "Second: ");
+  second = keyboard.nextDouble(); 
+  
+  if ( first < second ) 
   {
-		Scanner keyboard = new Scanner(System.in);
-		double first, second;
-
-		System.out.print( "Give me two numbers. First: " );
-		first = keyboard.nextDouble();
-		System.out.print( "Second: " );
-		second = keyboard.nextDouble();
-
-		if ( first < second ) {
-			System.out.println( first + " is LESS THAN " + second );
-		}
-		if ( first <= second ) {
-			System.out.println( first + " is LESS THAN/EQUAL TO " + second );
-		}
-		if ( first == second ) {
-			System.out.println( first + " is EQUAL TO " + second );
-		}
-		if ( first >= second ) {
-			System.out.println( first + " is GREATER THAN/EQUAL TO " + second );
-		}
-		if ( first > second ) {
-			System.out.println( first + " is GREATER THAN " + second );
-		}
-		if ( first != second )
-			System.out.println( first + " is NOT EQUAL TO " + second );
-	}
-}
+   System.out.println( first + " is LESS THAN " + second ); 
+  }
+  if ( first <= second ) 
+  { 
+   System.out.println( first + " is LESS THAN/EQUAL TO " + second ); 
+  }
+  if (first == second ) 
+  {
+   System.out.println( first + " is EQUAL TO " + second ); 
+  }
+  if ( first >= second ) 
+  {
+   System.out.println( first + " is GREATER THAN/EQUAL TO " + second ); 
+  }
+  if ( first > second ) 
+  {
+   System.out.println ( first + " is GREATER THAN " + second ); 
+  }
+  if ( first != second ) 
+  {
+   System.out.println( first + " is NOT EQUAL TO " + second ); 
+   System.out.println( "hey."); 
+  }
+ }
+} 
