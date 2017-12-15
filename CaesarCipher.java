@@ -1,6 +1,6 @@
 /*
 Learn Java the Hard Way 45: Caesar Cipher (Looping ThroughaString)
-This is the original code provided by the book before any changes 
+This is the code after changes 
 from the study drill were applied. 
 
 Study Drill: 
@@ -41,11 +41,16 @@ public class CaesarCipher {
 
 	public static void main( String[] args ) throws Exception {
 		Scanner keyboard = new Scanner(System.in);
-		String plaintext, cipher = "";
+		//i added the String variable fileName
+		String plaintext, fileName, fileNameOut, cipher = "";
 		int shift; 
+		
+		System.out.print( "What file do you want to read from?" ); 
+                fileName = keyboard.nextLine(); 
          
-		Scanner fileIn = new Scanner(new File("cipher-in.txt")); 
-		plaintext = fileIn.nextLine();
+		//I tried to get the Scanner file in to accept user input
+		Scanner fileIn = new Scanner(new File(fileName));  
+		plaintext = fileIn.nextLine();		
 		shift = fileIn.nextInt(); 
 		fileIn.close(); 
 		
@@ -54,8 +59,22 @@ public class CaesarCipher {
 		
 
 		for ( int i=0; i<plaintext.length(); i++ ) {
-			cipher += shiftLetter( plaintext.charAt(i));
+			cipher += shiftLetter( plaintext.charAt(i), shift);
 		}
-		System.out.println( cipher );
+		
+		System.out.println("What file do you want to print out to?"); 
+		fileNameOut = keyboard.nextLine(); 
+		
+		
+		
+		//store the ciphertext into a file
+		PrintWriter owt = new PrintWriter(fileNameOut); 
+	        owt.println( cipher );
+		owt.close(); 
+		
+		System.out.println("cipher-in.txt"); 
+		
+		
+		
 	}
 }
