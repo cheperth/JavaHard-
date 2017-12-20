@@ -12,17 +12,14 @@ how many records were processed.
 
 import java.util.Scanner; 
 
-class Actor 
-{ 
+class Actor { 
 	String name; 
 	String role; 
 	String birthdate; 
 }
 
-public class ActorList 
-{ 
-	public static void main(String[]args)throws Exception 
-	{ 
+public class ActorList { 
+	public static void main(String[]args)throws Exception { 
 		String url = "https://learnjavathehardway.org/txt/s01e01-cast.txt"; 
 		// Scanner inFile = new Scanner(new java.io.File("s01e01-cast.txt")); 
 		Scanner inFile = new Scanner((new java.net.URL(url)).openStream()); 
