@@ -1,7 +1,7 @@
 /*
 Learn Java The Hard Way Lesson 54 : Records from a File
-This is the original source code provided by the book before 
-any of the changes from the study drill were applied. 
+This is the source code provided by the book after 
+the changes from the study drill were applied. 
 
 Study Drill: 
 
