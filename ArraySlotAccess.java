@@ -1,22 +1,19 @@
 /*
 Learn Java The Hard Way Lesson 
-This is the original provided source code before any of the changes from the 
+This is the source code after the changes from the 
 Study Drill were applied. 
 
 Study Drill: 
 
 At the top of the code, change it so the array has a capacity of 1000 instead 
-of 3. Don’t change any other code and recompile and run it again. Guess what? 
-Those for loops might have been a little more work to write and to understand,
-but once written they work just as well for 1000 values as for 3. And that’s 
-pretty cool.
+of 3. Don’t change any other code and recompile and run it again.
 */ 
 
 public class ArraySlotAccess
 {
 	public static void main( String[] args ) 
   {
-		int[] arr = new int[3];
+		int[] arr = new int[1000];//this is where the change was made. 
 
 		// We almost always use a for loop to access each slot of an array.
 		for ( int i=0 ; i < arr.length ; i++ ) 
