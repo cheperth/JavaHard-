@@ -1,5 +1,6 @@
 /*
-Learn Java The Hard Way Lesson 
+Learn Java The Hard Way Lesson 51: Arrays Without Foreach Loops
+
 This is the source code after the changes from the 
 Study Drill were applied. 
 
